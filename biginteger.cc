@@ -69,9 +69,9 @@ BigInteger BigInteger::GetNbitsLength(int n, BigInteger& rhs)const
 
 BigInteger operator-(const BigInteger& ele)
 {
-	BigInteger inte = ele;
-	inte._signed = -inte._signed;
-	return inte;
+	BigInteger cpEle = ele;
+	cpEle._signed = -cpEle._signed;
+	return cpEle;
 }
 std::ostream& operator<<(std::ostream& out, const BigInteger& rhs)
 {
